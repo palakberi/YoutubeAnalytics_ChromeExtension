@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube_analytics_chromeExtension",
+    "version": "1.0",
+    "description": "Displays YouTube video analytics.",
+    "permissions": ["activeTab", "https://www.googleapis.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }

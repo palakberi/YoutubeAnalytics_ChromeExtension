@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 300px;
+    padding: 10px;
+  }
+  
+  #content {
+    text-align: center;
+  }
+  
+  #analytics {
+    margin-top: 20px;
+  }
+  
