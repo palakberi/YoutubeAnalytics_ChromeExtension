@@ -6,7 +6,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   });
   
   async function fetchAnalytics(videoId) {
-    const apiKey = 'AIzaSyAMGPEmMclmhQXL309wzdO-dyldICN6XfI'; 
+    const apiKey = ''; 
     const url = `https://www.googleapis.com/youtube/v3/videos?part=statistics&id=${videoId}&key=${apiKey}`;
     const response = await fetch(url);
     const data = await response.json();
